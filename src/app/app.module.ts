@@ -11,11 +11,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { WeatherCardComponent } from './weather-card/weather-card.component';
-import { WeatherForecastComponent } from './weather-forecast/weather-forecast.component';
-import { WeatherSearchComponent } from './weather-search/weather-search.component';
+import { WeatherCardComponent } from './weather/weather-card/weather-card.component';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { WeatherForecastComponent } from './weather/weather-forecast/weather-forecast.component';
+import { WeatherSearchComponent } from './weather/weather-search/weather-search.component';
 
 
 @NgModule({
