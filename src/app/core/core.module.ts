@@ -1,3 +1,4 @@
+import { SharedModule } from './../shared/shared.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LeftMenuComponent } from './left-menu/left-menu.component';
@@ -20,7 +21,8 @@ import {MatDividerModule} from '@angular/material/divider';
     CommonModule,
     MatToolbarModule,
     MatListModule,
-    MatDividerModule
+    MatDividerModule,
+    SharedModule
   ],
   exports: [
     LeftMenuComponent,

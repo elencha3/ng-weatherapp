@@ -4,7 +4,7 @@
       <input matInput placeholder="Ciudad" name="cityName" [(ngModel)]="cityName">
       <!-- <input matInput placeholder="Ciudad" name="cityName" [value]="cityName" (input)="cityName=$event.target.value"> -->
     </mat-form-field>
-    <button mat-raised-button color="primary" (click)="searchCity($event)">Buscar Ciudad</button>
-    <mat-spinner [style.visibility]="loading ? 'visible' : 'hidden'"></mat-spinner>
+    <button mat-raised-button color="primary" [ngClass]="cityName !== undefined ? 'active' : 'no-active'" (click)="searchCity($event)">Buscar Ciudad</button>
+    <mat-spinner *ngIf="loading"></mat-spinner>
   </mat-card-content>
 </mat-card>

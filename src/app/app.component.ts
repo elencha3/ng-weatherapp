@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, NgZone } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,10 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
   cityName = 'app';
+  sidebarMode = 'side';
 
-  public searchCity (cityName:string): void {
+  constructor() {
+  }
+
+  public search(cityName: string): void {
     this.cityName = cityName;
   }
+
 }
