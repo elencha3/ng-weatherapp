@@ -6,14 +6,6 @@ import { Component, NgZone } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  cityName = 'app';
-  sidebarMode = 'side';
 
-  constructor() {
-  }
-
-  public search(cityName: string): void {
-    this.cityName = cityName;
-  }
 
 }

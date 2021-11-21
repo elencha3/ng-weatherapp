@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { WeatherIconComponent } from './weather-icon/weather-icon.component';
 import { DropdownDirective } from './dropdown.directive';
 import { DropdowntoggleDirective } from './dropdowntoggle.directive';
+import { CelsiusPipe } from './pipes/celsius.pipe';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -11,7 +13,8 @@ import { DropdowntoggleDirective } from './dropdowntoggle.directive';
   declarations: [
     WeatherIconComponent,
     DropdownDirective,
-    DropdowntoggleDirective
+    DropdowntoggleDirective,
+    CelsiusPipe
   ],
   imports: [
     CommonModule,
@@ -21,6 +24,8 @@ import { DropdowntoggleDirective } from './dropdowntoggle.directive';
     MaterialFormsModule,
     WeatherIconComponent,
     DropdownDirective,
-    DropdowntoggleDirective]
+    DropdowntoggleDirective,
+    CelsiusPipe,
+    HttpClientModule]
 })
 export class SharedModule { }

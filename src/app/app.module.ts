@@ -1,12 +1,9 @@
+import { LayoutModule } from './layout/layout.module';
+import { LoginModule } from './login/login.module';
 import { WeatherModule } from './weather/weather.module';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
-import {MatCardModule} from '@angular/material/card';
-import {MatButtonModule} from '@angular/material/button';
-import {MatDividerModule} from '@angular/material/divider';
-import {MatGridListModule} from '@angular/material/grid-list';
-import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
-import {MatFormFieldModule} from '@angular/material/form-field';
+
 
 
 import { NgModule } from '@angular/core';
@@ -14,6 +11,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
@@ -24,7 +22,10 @@ import { AppComponent } from './app.component';
     BrowserModule,
     CoreModule,
     SharedModule,
-    WeatherModule
+    WeatherModule,
+    AppRoutingModule,
+    LoginModule,
+    LayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
