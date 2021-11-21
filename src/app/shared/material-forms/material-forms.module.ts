@@ -10,7 +10,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatSidenavModule} from '@angular/material/sidenav';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -28,7 +28,8 @@ import { FormsModule } from '@angular/forms';
     MatInputModule,
     MatSidenavModule,
     // Forms
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class MaterialFormsModule { }

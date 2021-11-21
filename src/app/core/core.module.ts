@@ -1,3 +1,5 @@
+import { AuthGuardService } from './auth-guard/auth-guard.service';
+import { RouterModule } from '@angular/router';
 import { SharedModule } from './../shared/shared.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -22,11 +24,13 @@ import {MatDividerModule} from '@angular/material/divider';
     MatToolbarModule,
     MatListModule,
     MatDividerModule,
-    SharedModule
+    SharedModule,
+    RouterModule.forChild([])
   ],
   exports: [
     LeftMenuComponent,
     TopMenuComponent
-  ]
+  ],
+  providers: [AuthGuardService]
 })
 export class CoreModule { }
